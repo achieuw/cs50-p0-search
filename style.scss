@@ -1,31 +1,127 @@
+/* ----- Variables ----- */
+$hr-color: rgba(150, 150, 150, 0.548);
+$search-btn-color: rgba(206, 206, 206, 0.397);
+$search-btn-text-color: rgb(59, 59, 59);
+/* --x-- Variables --x-- */
+
+/* ----- Global -----*/
 html, body {
   margin: 0;
   padding: 0;
 }
-nav{
-  display: flex;
+h1{
+  text-align: center;
+  font-size: 80px;
+  letter-spacing: -10px;
 }
-nav ul {
-  display: inline-flex;
-  top: 0;
-  width: 100%;
-  background-color: aliceblue;
-  list-style-type: none;
-  justify-content: right;
+h1 p{
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0;
 }
-
-nav ul li {
-  padding: 12px;
+.logo{
+  position: absolute;
+  margin: 20px;
+  letter-spacing: -2px;
 }
-
-nav ul li a {
+.logo p{
+  margin-left: 20px;
+}
+hr{
+  color: $hr-color;
+  height: .1px;
+}
+h4{
+  color:rgb(172, 69, 69);
+  font-weight: normal;
+  font-size: 22px;
+  margin: 20px;
+  letter-spacing: 0;
+}
+a{
   text-decoration: none;
   color: blue;
 }
-
-form{
-  display: flex;
-  justify-content: center;
+.container{
+  max-width: 1140px;
+  min-width: 200px;
+  width: 96%;
+  margin: 40px 2% 0 35px;
 }
+.row{
+  width: 95%;
+}
+.col-1, .col-4{
+  display: inline-block;
+}
+.col-1{
+  width: 19%;
+  margin: 15px 0 25px 15px ;
+  min-width: 190px;
+}
+.col-4{
+  width: 76%;
+}
+/* --x-- Global --x--*/
+
+/* ----- Navigation ----- */
+nav{
+  display: flex;
+}
+nav ul{
+  display: inline-flex;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  justify-content: right;
+}
+nav ul li {
+  padding: 12px;
+}
+/* --x-- Navigation --x-- */
+
+/* ----- Forms ----- */
+.form-center{
+  text-align: center;
+}
+.form-center .search-input{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid rgba(184, 184, 184, 0.493);
+  border-radius: 25px;
+  padding: 10px;
+}
+.form-center .search-btn{
+  text-align: center;
+  width: 150px;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: $search-btn-color;
+  color: $search-btn-text-color;
+}
+.container span{
+  font-size: 20px;
+}
+#advanced-form{
+  margin-top: 15px;
+}
+input{
+  width: 100%;
+}
+.adv-search-btn{
+  float: right;
+  width: 140px;
+  border: .5px solid rgba(27, 27, 216, 0.747);
+  border-radius: 2px;
+  background-color: rgb(52, 112, 202);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  height: 32px;
+}
+/* --x-- Forms --x-- */
 
 /*# sourceMappingURL=style.css.map */
