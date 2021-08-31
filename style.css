@@ -2,13 +2,16 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
-nav ul {
+nav{
   display: flex;
+}
+nav ul {
+  display: inline-flex;
+  top: 0;
   width: 100%;
   background-color: aliceblue;
   list-style-type: none;
-  justify-content: center;
+  justify-content: right;
 }
 
 nav ul li {
@@ -18,6 +21,11 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: blue;
+}
+
+form{
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
